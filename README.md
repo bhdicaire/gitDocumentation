@@ -1,12 +1,9 @@
 ![gitDocumentation logo](https://github.com/bhdicaire/gitDocumentation/raw/master/img/logo.png)
 
-There’s no right way to use [Git](https://git-scm.com/), but there are a lot of ways to use it inefficiently. As a life-long learner, I had the need to document best practices and conventions. As I use this for my own projects, I know this might not be the perfect approach for you. If you have any ideas, just open an issue and tell me what you think :speech_balloon:.
-Lifelong learning
-Here are five core practices that will enhance your Git usage regardless of your experience as a developer.
-One of the core tenets, I believe, is a well-written commit message. Having a well-written commit message is like being able to talk to your future self or even better, others.
+There’s no right way to use [Git](https://git-scm.com/), but there are a lot of ways to use it inefficiently. As a life-long learner, I had the need to document my ~~best~~ opinionated practices  and conventions. 
 
 
-## Opinionated commit and release note
+##  commit and release note
 
 
 use det : operator before and after the keyword. : fish : ( 🐟 ) without spaces between : and fish
@@ -31,3 +28,4 @@ You'll need the current version of [OmnniGraffle](https://www.omnigroup.com/omni
 5. Create a new Pull Request :grin:
 
 ## Related projects
+
