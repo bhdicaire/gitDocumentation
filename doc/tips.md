@@ -1,4 +1,14 @@
-Switching remote URLs from HTTPS to SSH
+##  commit and release note
+
+
+use det : operator before and after the keyword. : fish : ( 🐟 ) without spaces between : and fish
+
+You can pull up the emoji keyboard by hitting:
+* MacOS: <kbd>ctrl</kbd>+<kbd>⌘</kbd>+<kbd>space</kbd>
+* Windows10: <kbd>Win</kbd>+<kbd>.</kbd>
+
+
+## Switching remote URLs from HTTPS to SSH
 Open Terminal.
 
 Change the current working directory to your local project.
