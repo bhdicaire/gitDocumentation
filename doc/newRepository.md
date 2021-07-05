@@ -1,34 +1,33 @@
 Create a new repository, or reuse an existing one.
 
-Generate a new SSH key:
-```
-ssh-keygen -t rsa -C "your_email@example.com"
-```
 
-Copy the contents of the file `~/.ssh/id_rsa.pub` to your SSH keys in your GitHub account settings (https://github.com/settings/keys).
 
-Test SSH key:
-```
-$ ssh -T git@github.com
-Hi developius! You've successfully authenticated, but GitHub does not provide shell access.
-```
+##  commit and release note
 
-Change directory into the local clone of your repository (if you're not already there) and run:
 
-```
-git remote set-url origin git@github.com:username/your-repository.git
-```
+use det : operator before and after the keyword. : fish : ( 🐟 ) without spaces between : and fish
 
-Now try editing a file (try the README) and then do:
+You can pull up the emoji keyboard by hitting:
+* MacOS: <kbd>ctrl</kbd>+<kbd>⌘</kbd>+<kbd>space</kbd>
+* Windows10: <kbd>Win</kbd>+<kbd>.</kbd>
 
-```
-$ git commit -am "Update README.md"
-$ git push
-```
 
-You should not be asked for a username or password. If it works, your SSH key is correctly configured.
+##  commit and release note
 
-Clone can by direct via ssh
-git clone git@github.com:username/your-repository.git
+git remote add origin git@github.com:username/dotfiles.git
+git branch -M main
+git push -u origin main
 
-git remote set-url origin git@github.com:username/repository-name
+use det : operator before and after the keyword. : fish : ( 🐟 ) without spaces between : and fish
+
+You can pull up the emoji keyboard by hitting:
+* MacOS: <kbd>ctrl</kbd>+<kbd>⌘</kbd>+<kbd>space</kbd>
+* Windows10: <kbd>Win</kbd>+<kbd>.</kbd>
+
+
+## Switching remote URLs from HTTPS to SSH
+Open Terminal.
+
+Change the current working directory to your local project.
+
+List your existing remotes in order to get the name of the remote you want to change.

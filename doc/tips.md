@@ -1,29 +1,55 @@
-##  commit and release note
+## How to change remote URLs from HTTPS to SSH
+
+1. List your existing remotes
+```
+git remote -v
+```
+> origin  https://github.com/bhdicaire/REPOSITORY.git (fetch)
+> origin  https://github.com/bhdicaire/REPOSITORY.git (push)
+
+2. Change your existing remotes
+```git remote set-url origin git@github.com:bhdicaire/REPOSITORY.git
+```
+3. Confirm the modification
+```
+git remote -v
+```
+> origin  git@github.com:bhdicaire/REPOSITORY.git (fetch)
+> origin  git@github.com:bhdicaire/REPOSITORY.git (push)
+
+### Troubleshooting
+
+1. Confirm that you correctly typed it
+2. Check the access right on [gitHub](https://docs.github.com/en/github/using-git/changing-a-remotes-url#switching-remote-urls-from-https-to-ssh) and with your [local SSH items](../ssh.md)
 
 
-use det : operator before and after the keyword. : fish : ( 🐟 ) without spaces between : and fish
+## How to Rename the master branch to main
 
-You can pull up the emoji keyboard by hitting:
-* MacOS: <kbd>ctrl</kbd>+<kbd>⌘</kbd>+<kbd>space</kbd>
-* Windows10: <kbd>Win</kbd>+<kbd>.</kbd>
+1. Rename the "master" branch in your _local_ Git repositories
 
+```
+git branch -m master main
+git status
+```
 
-## Switching remote URLs from HTTPS to SSH
-Open Terminal.
+Git status should confirm that the local branch has been renamed.
 
-Change the current working directory to your local project.
+```
+On branch main
+Your branch is up to date with 'origin/master'.
 
-List your existing remotes in order to get the name of the remote you want to change.
+nothing to commit, working tree clean
+```
+2. Create a new branch on the remote named "main"
+command:
 
-$ git remote -v
-> origin  https://github.com/USERNAME/REPOSITORY.git (fetch)
-> origin  https://github.com/USERNAME/REPOSITORY.git (push)
-Change your remote's URL from HTTPS to SSH with the git remote set-url command.
+```
+git push -u origin main
+```
+3. Change the default branch on [github](https://docs.github.com/en/github/administering-a-repository/changing-the-default-branch)
+4. Delete the "master" branch on the remote
 
-$ git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
-Verify that the remote URL has changed.
+```
+git push origin --delete master
+```
 
-$ git remote -v
-# Verify new remote URL
-> origin  git@github.com:USERNAME/REPOSITORY.git (fetch)
-> origin  git@github.com:USERNAME/REPOSITORY.git (push)
